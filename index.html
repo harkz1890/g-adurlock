@@ -84,18 +84,22 @@
 						<p>Si tenés un proyecto en mente, contáctame para un presupuesto sin compromiso. Especialista en Durlock, texturizados y terminaciones de calidad.</p>
 						<a href="https://wa.me/5493482214784?text=Hola%20Gustavo,%20quiero%20solicitar%20un%20presupuesto%20para%20un%20trabajo%20con%20Durlock." class="button big" target="_blank">Contacto por WhatsApp</a>
 						
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Correo electronico" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Enviar mensaje" /></li>
-								</ul>
+						<form action="https://formspree.io/f/xkgvnwlw" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="button big">Enviar Mensaje</button>
+        </form>
+
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
@@ -473,3 +477,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
